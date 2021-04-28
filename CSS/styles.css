@@ -149,12 +149,21 @@ h1,h2,h3 {
 .hero{
     background-image:  url(../img/1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 450px;
+    background-size:100% 100%;
+    height: 150px;
     position: relative;
     margin-bottom: 2rem;
 }
-
+@media (min-width: 768px){
+    .hero{
+        background-image:  url(../img/1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;
+        position: relative;
+        margin-bottom: 2rem;
+    }
+}
 .contenido-hero{
     position: absolute;
     background-color:rgba(0,0,0,0.6);
@@ -171,6 +180,7 @@ h1,h2,h3 {
 .contenido-hero h2,
 .contenido-hero p {
     color: var(--blanco);
+    margin-top: 5rem;
 }
 
 .contenido-hero .ubicacion{
@@ -300,3 +310,4 @@ h1,h2,h3 {
 .footer{
     text-align: center;
 }
+
